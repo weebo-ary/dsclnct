@@ -382,8 +382,6 @@ img {
 .specs__whyimg {
   width: 15rem;
 }
-
-
 /*=============== CASE ===============*/
 .case__container {
   position: relative;
@@ -403,6 +401,23 @@ img {
 .case__description {
   margin-bottom: var(--mb-1-5);
   line-height: var(--text-line-height);
+}
+
+.banner__img {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:550px) {
+  .case__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner__img {
+    width: 12rem;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -438,6 +453,7 @@ img {
 /* ============== CARD ================= */
 
 .products__container {
+  padding: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,11 +468,15 @@ img {
 
 .products__content {
   display: flex;
+  padding: 30px;
   flex-direction: row ;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  background-color: rgb(28, 28, 28, 1);
+  border-radius: 20px;
 }
+
 
 .products__head {
   font-size: 3vw;
@@ -471,15 +491,17 @@ img {
 }
 
 .products__poster {
-  width: 13rem;
+  width: 5rem;
   transition: transform .2s;
 }
-
-.products__poster:hover {
-    transform: scale(1.6);
+@media screen and (max-width: 600px) {
+  .products__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
   .product__para {
     font-size: small;
   }
@@ -489,6 +511,9 @@ img {
   .products__poster {
     width: 7rem;
   }
+  .products__poster:hover {
+    transform: scale(2.9);
+}
 }
 
 /*=============== FOOTER ===============*/
@@ -638,6 +663,7 @@ img {
   .home__description {
     font-size: var(--small-font-size);
   }
+
   .specs__img {
     width: 200px;
   }
