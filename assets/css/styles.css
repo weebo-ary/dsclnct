@@ -404,9 +404,6 @@ img {
   right: -4rem;
 }
 
-.specs__whyimg {
-  width: 15rem;
-}
 /*=============== CASE ===============*/
 .case__container {
   position: relative;
@@ -516,7 +513,7 @@ img {
 }
 
 .products__poster {
-  width: 5rem;
+  width: 13rem;
   transition: transform .2s;
 }
 @media screen and (max-width: 600px) {
@@ -534,7 +531,7 @@ img {
     font-size: large;
   }
   .products__poster {
-    width: 7rem;
+    width: 10rem;
   }
   .products__poster:hover {
     transform: scale(2.9);
